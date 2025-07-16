@@ -1,1 +1,7 @@
-export type Sections = "Hero" | "Product" | "Sponsors" | "About" | "Contact";
+export type Section =
+  | "Hero"
+  | "Product"
+  | "Sponsors"
+  | "About"
+  | "Contact"
+  | "Benefits";
