@@ -4,7 +4,9 @@
   align-items: center;
 
   position: absolute;
-  bottom: 0.1rem;
+  right: 50%;
+  left: 50%;
+  bottom: 1rem;
 
   z-index: 2;
 
