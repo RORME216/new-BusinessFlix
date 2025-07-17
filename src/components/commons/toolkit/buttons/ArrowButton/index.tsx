@@ -3,22 +3,23 @@ import { motion } from "framer-motion";
 import { IoIosArrowDown } from "react-icons/io";
 
 // Styles
-import "./styles.css";
+import styles from "./styles.module.css";
 
 // Animation
 import { LEVITATION } from "../../../../../animations/levitation";
 
 // Types
 import type { ArrowScrool } from "./types";
+import scrollToSection from "../../../../../utiils/helpers/scroll";
 
 export default function ArrowButton({ section }: ArrowScrool) {
   return (
     <motion.div
-      className="arrow-container"
-      onClick={() => console.log(section)}
+      className={styles.container}
+      onClick={() => scrollToSection(section)}
       {...LEVITATION}
     >
-      <IoIosArrowDown className="arrow-icon" />
+      <IoIosArrowDown className={styles.icon} />
     </motion.div>
   );
 }

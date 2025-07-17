@@ -1,6 +1,6 @@
 // Types
-import type { Sections } from "../../../../../types/sections";
+import type { Section } from "../../../../../types/sections";
 
 export type ArrowScrool = {
-  section: Sections;
+  section: Section;
 };

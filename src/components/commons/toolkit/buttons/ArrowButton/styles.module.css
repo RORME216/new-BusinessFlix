@@ -1,4 +1,4 @@
-.arrow-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-.arrow-icon {
+.icon {
   font-size: 2rem;
   color: black;
   cursor: pointer;
