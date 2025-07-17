@@ -1,0 +1,9 @@
+.anchorLink {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  color: var(--black-1000);
+
+  cursor: pointer;
+}
