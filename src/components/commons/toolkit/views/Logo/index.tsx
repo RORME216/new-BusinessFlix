@@ -1,5 +1,6 @@
 // Types
 import type { Logo as LogoProps } from "./types";
+import type { Section } from "../../../../../types/sections";
 
 // Functions
 import scrollToSection from "../../../../../utiils/helpers/scroll";
@@ -15,7 +16,7 @@ export default function Logo({ src, alt, width, height, href }: LogoProps) {
       return;
     }
 
-    scrollToSection(href);
+    scrollToSection(href as Section);
   };
 
   return (
