@@ -1,0 +1,28 @@
+.dropdownList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+
+  max-width: fit-content;
+  min-height: 20vh;
+
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+
+  list-style-type: none;
+
+  background-color: var(--blue-1000);
+
+  .dropdownRow {
+    text-align: center;
+
+    a {
+      color: var(--white-100);
+    }
+  }
+}

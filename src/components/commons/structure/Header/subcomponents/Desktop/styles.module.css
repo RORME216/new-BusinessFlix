@@ -1,0 +1,19 @@
+.navigationList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 1.5rem;
+
+  list-style-type: none;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.items {
+  text-align: center;
+}
