@@ -10,6 +10,8 @@ import { LEVITATION } from "../../../../../animations/levitation";
 
 // Types
 import type { ArrowScrool } from "./types";
+
+// Utils
 import scrollToSection from "../../../../../utiils/helpers/scroll";
 
 export default function ArrowButton({ section }: ArrowScrool) {
