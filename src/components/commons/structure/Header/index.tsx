@@ -1,9 +1,10 @@
 // Components
-import Logo from "../../toolkit/views/Logo";
+import Logo from "@components/commons/toolkit/views/Logo";
 import Desktop from "./subcomponents/Desktop";
+import Mobile from "./subcomponents/Mobile";
 
 // Images
-import businessFlixLogo from "../../../../assets/images/logos/logo.png";
+import businessFlixLogo from "@assets/images/logos/logo.png";
 
 // Types
 import type { Section } from "../../../../types/sections";
@@ -11,7 +12,6 @@ import type { Anchor } from "../../../../types/links";
 
 // Styles
 import styles from "./styles.module.css";
-import Mobile from "./subcomponents/Mobile";
 
 // Collections
 const navigationLinks: Anchor[] = [

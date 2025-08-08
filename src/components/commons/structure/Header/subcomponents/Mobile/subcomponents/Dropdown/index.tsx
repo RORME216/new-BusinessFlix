@@ -1,22 +1,20 @@
 // External library
-import { createPortal } from "react-dom";
-
 import { motion, AnimatePresence } from "framer-motion";
 
 // Components
-import AnchorLink from "../../../../../../toolkit/links/AnchorLink";
+import AnchorLink from "@components/commons/toolkit/links/AnchorLink";
 
 // Styles
 import styles from "./styles.module.css";
 
 // Animations
-import { DROP } from "../../../../../../../../animations/drop";
+import { DROP } from "@animations/drop";
 
 // Types
 import type { NavigationList } from "../../../../types";
 
 export default function DropdownMenu({ links, isOpen }: NavigationList) {
-  return createPortal(
+  return (
     <AnimatePresence>
       {isOpen ? (
         <motion.div {...DROP}>
@@ -33,7 +31,6 @@ export default function DropdownMenu({ links, isOpen }: NavigationList) {
           </div>
         </motion.div>
       ) : null}
-    </AnimatePresence>,
-    document.body
+    </AnimatePresence>
   );
 }

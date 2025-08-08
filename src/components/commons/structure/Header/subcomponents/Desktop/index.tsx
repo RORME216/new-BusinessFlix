@@ -1,5 +1,5 @@
 // Components
-import AnchorLink from "../../../../toolkit/links/AnchorLink";
+import AnchorLink from "@components/commons/toolkit/links/AnchorLink";
 
 // Styles
 import styles from "./styles.module.css";
