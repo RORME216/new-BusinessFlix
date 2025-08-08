@@ -3,7 +3,7 @@ import type { Logo as LogoProps } from "./types";
 import type { Section } from "../../../../../types/sections";
 
 // Functions
-import scrollToSection from "../../../../../utiils/helpers/scroll";
+import scrollToSection from "@utils/helpers/scroll";
 
 export default function Logo({ src, alt, width, height, href }: LogoProps) {
   const isExternalLink = typeof href === "string" && /^https?:\/\//.test(href);

@@ -6,13 +6,13 @@ import { IoIosArrowDown } from "react-icons/io";
 import styles from "./styles.module.css";
 
 // Animation
-import { LEVITATION } from "../../../../../animations/levitation";
+import { LEVITATION } from "@animations/levitation";
 
 // Types
 import type { ArrowScrool } from "./types";
 
 // Utils
-import scrollToSection from "../../../../../utiils/helpers/scroll";
+import scrollToSection from "@utils/helpers/scroll";
 
 export default function ArrowButton({ section }: ArrowScrool) {
   return (

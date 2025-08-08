@@ -1,5 +1,5 @@
 // Functions
-import scrollToSection from "../../../../../utiils/helpers/scroll";
+import scrollToSection from "@utils/helpers/scroll";
 
 // Types
 import type { Anchor } from "../../../../../types/links";
