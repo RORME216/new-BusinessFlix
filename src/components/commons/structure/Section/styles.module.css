@@ -4,13 +4,8 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
-  height: 100vh;
-
-  min-width: 100%;
+  width: 100vw;
   min-height: 100vh;
-
-  padding: 2rem 0;
 }
 
 .sectionContent {
@@ -19,6 +14,7 @@
   align-items: center;
   justify-content: center;
 
+  width: 100%;
   height: 60%;
 
   margin: auto;

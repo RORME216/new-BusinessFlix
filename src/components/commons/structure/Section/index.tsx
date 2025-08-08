@@ -1,15 +1,19 @@
+// Components
+import ArrowButton from "@components/commons/toolkit/buttons/ArrowButton";
+
 // Types
 import type { SectionProps } from "./types";
 
 // Styles
 import styles from "./styles.module.css";
-import ArrowButton from "../../toolkit/buttons/ArrowButton";
 
 export const Section = ({
   children,
   currentSection,
   nextSection,
   backgroundColor,
+  width,
+  height,
 }: SectionProps) => {
   return (
     <div
@@ -19,7 +23,15 @@ export const Section = ({
         backgroundColor,
       }}
     >
-      <div className={styles.sectionContent}>{children}</div>
+      <div
+        className={styles.sectionContent}
+        style={{
+          width,
+          height,
+        }}
+      >
+        {children}
+      </div>
       {nextSection ? <ArrowButton section={nextSection} /> : null}
     </div>
   );
