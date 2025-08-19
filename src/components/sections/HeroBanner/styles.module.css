@@ -1,0 +1,55 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 80%;
+}
+
+.hero-stripe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+  max-height: clamp(30vh, 35vh, 50vh);
+
+  gap: 1rem;
+  padding: 2rem;
+
+  background-color: var(--blue-1000);
+}
+
+.stripe-image {
+  object-fit: contain;
+  width: 50%;
+  height: auto;
+  max-height: clamp(30vh, 45vh, 50vh);
+}
+
+.stripe-text {
+  font-weight: bolder;
+  text-transform: uppercase;
+
+  color: var(--white-100);
+
+  font-family: sans-serif;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: clamp(1, 1.25, 1.5);
+}
+
+@media screen and (max-width: 420px) {
+  .hero-stripe {
+    flex-direction: column;
+  }
+
+  .stripe-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
