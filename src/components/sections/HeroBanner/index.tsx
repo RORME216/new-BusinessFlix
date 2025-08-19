@@ -1,4 +1,5 @@
 // Mocks
+import { useIsMobile } from "@hooks/useIsMobile";
 import heroContent from "../../../assets/content/hero";
 
 // Components
@@ -14,6 +15,8 @@ import breakText from "@utils/helpers/formatter/breakText";
 const splitTextOfHighlight = breakText(heroContent.highlightText);
 
 export const HeroBanner = () => {
+  const isMobile = useIsMobile();
+
   return (
     <Section
       currentSection="Hero"
@@ -26,6 +29,9 @@ export const HeroBanner = () => {
             className={styles["stripe-image"]}
             src={heroContent.highlightImage.src}
             alt={heroContent.highlightImage.alt}
+            style={{
+              width: isMobile ? "70%" : "50%",
+            }}
           />
           <h2 className={styles["stripe-text"]}>
             {splitTextOfHighlight.map((line, index) => (
